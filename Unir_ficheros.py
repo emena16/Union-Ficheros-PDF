@@ -1,4 +1,4 @@
-from PyPDF2 import PdfFileMerger, PdfFileWriter
+from PyPDF2 import PdfMerger, PdfFileWriter
 import os
 import msvcrt
 print("*** Union de ficheros PDF para Tabarato, SA de CV ***")
@@ -22,7 +22,7 @@ if len(pdfs)<1:
 
 nombre_archivo_salida = repr(len(pdfs))+" ficheros_unidos.pdf"
 #Creamos el objeto fucionador que se encargara de gestionar los ficheros
-fusionador = PdfFileMerger()
+fusionador = PdfMerger()
 #Comenzamos a unir recorriendo fichero por fichero y los vamos uniendo 1 con el siguiente hasta terminar
 for pdf in pdfs:
     print('Uniendo: '+pdf)
