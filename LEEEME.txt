@@ -1,0 +1,31 @@
+
+
+En esta carpeta se ecuentran 2 scripts:
+Paso:
+	1) Ejecutar el instalador de Python: python-3.11.5-amd64.exe
+		(solo dar siguiente, siguien e instalar)
+
+	2) Vamos a abrir una terminal, Si tiene windows 10 dentro de la carpeta donde estan estas instrucciones dar click en el
+		el menú "Archivo" -> "Abrir Power Shell"
+
+	3) Vamos a instalar las librerias para poder trabajar con PDFs
+		A) Copiar y pegar los siguientes comandos en la terminal:
+			pip install PyPDF2==2.9
+			pip install pdfReader
+			
+
+
+Union-Ficheros-PDF
+	En esta carpeta puede unir varios ficheros a la vez, para ello solo es necesario pegar en la carpeta "Ficheros_A_Unir" 
+
+	Posteriormente abrir una terminal dentro de la carpeta "Union-Ficheros-PDF" y escribir el comando:  
+		python .\Unir_ficheros.py
+
+	Listo, todos los ficheros se convertiran en 1 solo
+
+
+Serapara-Documento
+	En esta carpeta puede separar un fichero PDF en documentos individuales, para ello solo es necesario pegar el documento que va a separar y el script se encargará de separar el documento en hojas individuales en la carpeta "salida", 
+	simplemente en la carpeta "Serapara-Documento" abrir un powershell y escribir el comando: 
+		python .\Separa_DocumentoScript.py
+	el script va a preguntar el nombre del archivo, el cual vamos a separar.
